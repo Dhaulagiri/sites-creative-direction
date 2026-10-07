@@ -1,47 +1,58 @@
 # Sites Creative Direction
 
-A companion skill for ChatGPT Sites that chooses task-focused UX and translates a national park into a distinctive visual direction. Describe the site you need; the builder chooses the interaction model, park, and composition internally and delivers one considered design with minimal useful copy.
-
-The starter library includes Joshua Tree, Olympic, Bryce Canyon, Acadia, Yellowstone, White Sands, Glacier, and Hawaiʻi Volcanoes. Each profile includes palette seeds, spatial principles, typography, a signature detail, mobile adaptation, and clichés to avoid. These are original creative interpretations, not official park identities.
-
-## Workflow
-
-Understand the task → choose an interaction model → choose a park → explore three short structural concepts → select one → save a design brief → build through Sites → walk through the task and inspect the rendered result.
-
-The UX layer distills six ideals: start with a useful outcome; prioritize by consequence; put meaning beside information; reveal depth without losing orientation; close the loop on actions; and preserve the task across devices and visits. It rejects decorative eyebrows, repeated subtitles, generic welcome copy, and panel descriptions that narrate obvious controls. These are internal design principles, not a prescribed set of page sections.
-
-Read [the UX guidance](skills/sites-park-design/references/ux-principles.md) or [the source-grounded research](skills/sites-park-design/references/research/ux-foundations.md) covering dashboard research, GOV.UK, Microsoft, Grafana, IBM Carbon, Nielsen Norman Group, Apple, and W3C. The patterns are our synthesis, not a claim that any source endorses this particular skill.
-
-Only the selected concept is implemented. The workflow adds no user questionnaire, unsolicited product features, or publishing permission. Explicit brand references take precedence; ordinary maintenance preserves the existing design. The skill works alongside the installed Sites building/hosting skills, not as a replacement.
+A Codex skill for distinctive, useful ChatGPT Sites. It chooses a UX pattern and national park as design inspiration, with minimal copy and no decorative eyebrows, repeated subtitles, or generic dashboard template.
 
 ## Install
 
-Requires Python 3.10+ and an existing local checkout. No third-party Python packages are needed for the installer or its tests.
-
-Enable for a Sites workspace:
+Requires Node.js/npm and Git. The repository is public; no GitHub account is needed.
 
 ```sh
-python3 scripts/install.py --workspace /path/to/sites-workspace
+npx skills add Dhaulagiri/sites-creative-direction \
+  --skill sites-park-design --agent codex --global
 ```
 
-Or enable for all local Codex Sites work:
+Omit `--global` to install only in the current project. Installation uses the [Skills CLI](https://github.com/vercel-labs/skills), so no Python or manual clone is required.
+
+## Use
+
+Start a new Codex chat and ask:
+
+> Use $sites-park-design to build a Site for planning our family's weekly meals.
+
+To use it automatically for Sites work, add this to your existing `~/.codex/AGENTS.md`, preserving any other instructions:
+
+```markdown
+For new ChatGPT Sites and requested Site redesigns, use $sites-park-design
+alongside Sites building. Choose the UX pattern, park, and concept internally.
+Honor explicit branding and preserve existing designs during ordinary maintenance.
+Do not apply this to unrelated web projects.
+```
+
+For a project-only default, add the same text to that project's `AGENTS.md` instead. The installer makes the skill available; this instruction makes it part of your default workflow. Sites building/hosting must also be available in Codex.
+
+## What it does
+
+- Chooses a task model: monitor, triage, compare, plan, create, or read.
+- Selects from eight park profiles covering palette, composition, typography, and restrained details.
+- Explores three short concepts internally, then builds one.
+- Checks the actual task, responsive behavior, and unnecessary copy.
+
+Explicit branding takes precedence. Park profiles are creative interpretations, not official identities.
+
+[UX principles](skills/sites-park-design/references/ux-principles.md) · [Park profiles](skills/sites-park-design/references/parks/index.md) · [Research](skills/sites-park-design/references/research/ux-foundations.md)
+
+## Update
 
 ```sh
-python3 scripts/install.py --user
+npx skills update sites-park-design --global
 ```
 
-The installer symlinks this checkout's skill into `.agents/skills` and adds a clearly delimited, Sites-only instruction block to the workspace `AGENTS.md` or user Codex home's `AGENTS.md`. Existing instructions are preserved; rerunning updates only the managed block. Conflicting skill installations, malformed blocks, symlinked instruction files, and shadowing `AGENTS.override.md` files cause it to stop. Keep the checkout in place. To remove, delete the `sites-park-design` symlink and its delimited instruction block only.
+Omit `--global` for a project installation.
 
-Start a new chat after installation. Automatic discovery alone is a routing hint; the instruction hook explicitly requests the skill for applicable Sites work. This changes the local Codex workflow where installed, not the hosted ChatGPT Sites product or other people's defaults. See [official skill discovery documentation](https://learn.chatgpt.com/docs/build-skills) and [instruction loading documentation](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
-
-## Develop and evaluate
+## Development
 
 ```sh
 python3 -m unittest discover -s tests -v
 ```
 
-Run the bundled Codex skill-creator `quick_validate.py` against `skills/sites-park-design` if available (it requires PyYAML). Structural validation does not establish design quality.
-
-Use [the evaluation briefs](evals/briefs.md) for real Site builds and compare screenshots, first-viewport usability, and structural variety. No rendered Site evaluation is included yet. Park profiles are guidance, not templates or a guarantee of globally unique designs.
-
-To add a park, add a profile under `skills/sites-park-design/references/parks/` and link it from the index. Favor distinct composition and interaction principles over another palette swap. Do not copy NPS logos, illustrations, or branding into the package.
+Python is only needed for the optional local installer and its tests. Use [the evaluation briefs](evals/briefs.md) to compare rendered Sites; design quality has not yet been validated through those evaluations.
