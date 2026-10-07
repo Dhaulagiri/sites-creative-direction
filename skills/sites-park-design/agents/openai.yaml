@@ -1,0 +1,6 @@
+interface:
+  display_name: "Park-inspired Sites"
+  short_description: "Distinctive Sites inspired by national parks"
+  default_prompt: "Use $sites-park-design alongside Sites to choose and build a distinctive park-inspired design for my site."
+policy:
+  allow_implicit_invocation: true
