@@ -13,6 +13,12 @@ Choose a useful interaction model, then use a national park as an internal art d
 - User-supplied branding, accessibility needs, references, and requested layout take precedence. If these leave no useful room for park inspiration, skip it.
 - Keep the product's purpose, content, and capabilities intact. A park is inspiration, not a reason to add outdoor content, a hero, a map, animation, or features.
 
+## Apply to an existing Site
+
+An explicit request to apply this skill to an existing Site authorizes a design refresh; the user need not separately say "redesign." Open the identified Site through the normal Sites workflow and inspect its current screens, capabilities, and any saved design brief before choosing changes. Improve its UX, composition, copy, and visual treatment within the requested scope while preserving content, user data, working features, routes, integrations, and access settings. Reuse the existing project and stack. For a limited request, such as a favicon update, apply only that part of the guidance.
+
+Reuse a suitable existing park direction unless the user asks for a fresh one or the requested refresh needs a different direction. Create or update the saved brief and verify the existing core flows after changes. Ordinary maintenance without a design request still preserves the design.
+
 ## Choose and translate
 
 Before selecting a park, read [UX principles and task patterns](references/ux-principles.md). Choose the primary outcome and interaction model. The patterns are decision aids, not page templates or a requirement to add features. Function determines structure; the park gives that structure character. Research provenance is linked from that reference and need not be loaded for every build.
@@ -32,7 +38,7 @@ Carry the direction through the main view, narrow screens, and relevant interact
 
 Profiles are original creative interpretations, not official park branding. Do not use NPS marks or imply affiliation. Follow Sites' asset guidance; geometric accents are fine, representational artwork needs an appropriate asset workflow. Do not add landscapes to unrelated products just to make the inspiration obvious.
 
-Give every new Site a custom favicon using the selected park’s palette and one simple recognizable motif that works at 16 and 32 pixels. Reuse a suitable supplied brand mark; preserve user-provided icons and valid existing custom favicons unless replacement is requested. Follow Sites’ favicon implementation guidance to replace the starter asset and wire the icon into framework metadata or the HTML head. Verify the actual referenced icon loads and remains legible at both sizes. Do not use NPS marks, detailed scenery, or text too small to read.
+Give every new Site a custom favicon. When applying this skill to an existing Site, replace a missing or starter favicon as part of the refresh; replace a valid custom favicon only when requested. Use the selected park’s palette and one simple recognizable motif that works at 16 and 32 pixels. Reuse a suitable supplied brand mark; preserve user-provided icons and valid existing custom favicons unless replacement is requested. Follow Sites’ favicon implementation guidance to replace the starter asset and wire the icon into framework metadata or the HTML head. Verify the actual referenced icon loads and remains legible at both sizes. Do not use NPS marks, detailed scenery, or text too small to read.
 
 After a meaningful implementation, read [the review rubric](references/review.md) and inspect the rendered result at desktop and narrow widths using available browser tools. Repair concrete problems in one focused pass and recheck affected views. If rendering is unavailable, record that limitation rather than claiming visual validation. Functional and accessibility checks still follow the underlying Sites workflow.
 

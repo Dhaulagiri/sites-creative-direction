@@ -20,7 +20,7 @@ Perform the main task, not just a screenshot review. For an interactive surface,
 
 - **Structure:** Can you identify a specific composition or grouping decision beyond the palette? If replacing the colors makes this indistinguishable from a generic hero and card grid, revisit the structure where the task permits.
 - **Specificity:** Can you name two distinct choices traceable to the selected profile? Include one beyond color, such as spacing rhythm, typography hierarchy, edges, or alignment.
-- **Favicon:** For a new Site or requested icon replacement, does the referenced favicon load and read clearly at 16 and 32 pixels, using the chosen palette and a simple motif? Confirm supplied branding and existing custom icons are preserved where required.
+- **Favicon:** For a new Site, an existing-Site refresh with a missing/starter icon, or requested icon replacement, does the referenced favicon load and read clearly at 16 and 32 pixels, using the chosen palette and a simple motif? Confirm supplied branding and existing custom icons are preserved where required.
 - **Coherence:** Do the same decisions hold through controls, secondary content, and mobile rather than only the opening section?
 - **Restraint:** Does the signature detail help hierarchy or orientation? Remove competing ornaments, landscape clichés, filler headings, and gratuitous motion.
 - **Variety:** If prior accessible briefs exist, compare structure as well as park names. Different parks should not all converge on the same cream/serif/rounded-card treatment.

@@ -19,6 +19,14 @@ Start a new Codex chat and ask:
 
 > Use $sites-park-design to build a Site for planning our family's weekly meals.
 
+For an existing Site, open it in Codex or provide its URL and ask:
+
+> Apply $sites-park-design to this existing Site. Refresh the design and simplify the copy while preserving its content, data, and functionality.
+
+You can also apply just one part:
+
+> Use $sites-park-design to replace this Site's favicon with one matching its current park-inspired design.
+
 To use it automatically for Sites work, add this to your existing `~/.codex/AGENTS.md`, preserving any other instructions:
 
 ```markdown
@@ -34,7 +42,8 @@ For a project-only default, add the same text to that project's `AGENTS.md` inst
 
 - Chooses a task model: monitor, triage, compare, plan, create, or read.
 - Selects from eight park profiles covering palette, composition, typography, and restrained details.
-- Creates a matching favicon for new Sites, preserving supplied brand icons.
+- Applies to new Sites and requested refreshes of existing Sites.
+- Creates a matching favicon for new Sites and replaces missing or starter icons during a refresh, preserving supplied brand icons and valid custom icons unless replacement is requested.
 - Explores three short concepts internally, then builds one.
 - Checks the actual task, responsive behavior, and unnecessary copy.
 
