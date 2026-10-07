@@ -7,6 +7,20 @@ description: Give new ChatGPT Sites and requested redesigns task-focused UX, min
 
 Choose a useful interaction model, then use a national park as an internal art direction seed. The user describes the product; choose the direction without requiring a park, mood board, or concept selection. Follow the Sites building and hosting skills for the actual Site lifecycle. This skill adds design guidance, not deployment authorization or a new implementation stack.
 
+## Layer over frontend-design
+
+Read the installed `frontend-design` skill by Anthropic when available, then apply this companion's task model, park profile, and constraints to its design plan. Use frontend-design for general typography, composition, aesthetic judgment, and visual self-critique; do not duplicate or fork its instructions here. Skills do not automatically load one another: explicitly read its `SKILL.md` through the available skill catalog or installed skill directory before planning.
+
+Within the combined guidance, honor explicit user requirements first. Keep Sites building/hosting in charge of project setup, assets, previews, publication, and access boundaries. Use this companion's more specific Sites design constraints when general frontend-design advice differs:
+
+- A working dashboard opens on useful controls and content. Treat the opening composition as the main experience; do not add a marketing hero before it.
+- Select the park and concept internally from a sufficiently clear brief. Ask only about material product ambiguity, not approval of routine art direction.
+- Use real supplied content and data. Do not invent facts, metrics, or features to complete a composition.
+- Apply the copy deletion test below even if a general design treatment invites extra labels or explanatory text.
+- Treat park palettes as intentional inputs, while checking readability and avoiding generic composition. An upstream warning about common palettes is not a blanket prohibition on a suitable park profile.
+
+Use one combined plan, saved brief, implementation, and review pass. If frontend-design is unavailable, mention the missing recommended foundation once and continue using this companion and Sites guidance; do not install or fetch dependencies silently during a Site build.
+
 ## Scope
 
 - Apply to new Sites and explicit redesigns. For ordinary edits, extend the existing direction and apply UX checks only to the changed flow.
@@ -34,7 +48,7 @@ Continue project setup while making these decisions. Do not turn this into an ap
 
 Use the least visible copy that makes the experience clear. Omit decorative eyebrow labels, generic welcome messages, slogans, and subtitles that repeat a heading. Do not narrate the interface ("Manage your X in one place") or add descriptions to every panel. Keep labels, instructions, context, and feedback that people actually need to identify, interpret, decide, or act. Never add copy merely to fill a layout.
 
-Carry the direction through the main view, narrow screens, and relevant interactive states. Use park-specific structural principles rather than generic park-poster styling. Do not default every park to a serif heading, cream background, topographic lines, and rounded cards. Flourishes should reinforce hierarchy or orientation; use less decoration on dense working surfaces.
+Apply frontend-design’s general craft guidance through the selected park profile across views and states. Use park-specific structural principles rather than generic park-poster styling; do not give every park the same cream/serif/rounded-card treatment. Keep flourishes restrained on working surfaces.
 
 Profiles are original creative interpretations, not official park branding. Do not use NPS marks or imply affiliation. Follow Sites' asset guidance; geometric accents are fine, representational artwork needs an appropriate asset workflow. Do not add landscapes to unrelated products just to make the inspiration obvious.
 

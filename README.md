@@ -1,17 +1,20 @@
 # Sites Creative Direction
 
-A Codex skill for distinctive, useful ChatGPT Sites. It chooses a UX pattern and national park as design inspiration, with minimal copy and no decorative eyebrows, repeated subtitles, or generic dashboard template.
+A Sites-specific companion to [Anthropic’s frontend-design skill](https://github.com/anthropics/skills/tree/main/skills/frontend-design). It chooses a UX pattern and national park as design inspiration, with minimal copy and no decorative eyebrows, repeated subtitles, or generic dashboard template.
 
 ## Install
 
 Requires Node.js/npm and Git. The repository is public; no GitHub account is needed.
 
 ```sh
+npx skills add anthropics/skills \
+  --skill frontend-design --agent codex --global
+
 npx skills add Dhaulagiri/sites-creative-direction \
   --skill sites-park-design --agent codex --global
 ```
 
-Omit `--global` to install only in the current project. Installation uses the [Skills CLI](https://github.com/vercel-labs/skills), so no Python or manual clone is required.
+Install both skills in the same scope. Omit `--global` from both commands to install only in the current project. Installation uses the [Skills CLI](https://github.com/vercel-labs/skills), so no Python or manual clone is required.
 
 ## Use
 
@@ -31,12 +34,21 @@ To use it automatically for Sites work, add this to your existing `~/.codex/AGEN
 
 ```markdown
 For new ChatGPT Sites and requested Site redesigns, use $sites-park-design
-alongside Sites building. Choose the UX pattern, park, and concept internally.
+alongside frontend-design and Sites building. Choose the UX pattern, park,
+and concept internally.
 Honor explicit branding and preserve existing designs during ordinary maintenance.
 Do not apply this to unrelated web projects.
 ```
 
 For a project-only default, add the same text to that project's `AGENTS.md` instead. The installer makes the skill available; this instruction makes it part of your default workflow. Sites building/hosting must also be available in Codex.
+
+## How the layers fit
+
+- **Sites building/hosting:** project lifecycle, assets, previews, and publishing.
+- **Anthropic frontend-design:** general visual craft and critique.
+- **This companion:** automatic park direction, task-focused UX, minimal copy, and favicon/existing-Site rules.
+
+Our companion explicitly reads frontend-design when installed and combines the guidance into one plan. Explicit user requirements take precedence. Working surfaces open directly on the task; no marketing hero is added by default. The upstream skill is installed separately, not copied into this repository. Without it, the companion still works but reports that the recommended foundation is missing.
 
 ## What it does
 
@@ -54,6 +66,7 @@ Explicit branding takes precedence. Park profiles are creative interpretations, 
 ## Update
 
 ```sh
+npx skills update frontend-design --global
 npx skills update sites-park-design --global
 ```
 
