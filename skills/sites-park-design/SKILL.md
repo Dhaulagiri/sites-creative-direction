@@ -32,6 +32,8 @@ Carry the direction through the main view, narrow screens, and relevant interact
 
 Profiles are original creative interpretations, not official park branding. Do not use NPS marks or imply affiliation. Follow Sites' asset guidance; geometric accents are fine, representational artwork needs an appropriate asset workflow. Do not add landscapes to unrelated products just to make the inspiration obvious.
 
+Give every new Site a custom favicon using the selected park’s palette and one simple recognizable motif that works at 16 and 32 pixels. Reuse a suitable supplied brand mark; preserve user-provided icons and valid existing custom favicons unless replacement is requested. Follow Sites’ favicon implementation guidance to replace the starter asset and wire the icon into framework metadata or the HTML head. Verify the actual referenced icon loads and remains legible at both sizes. Do not use NPS marks, detailed scenery, or text too small to read.
+
 After a meaningful implementation, read [the review rubric](references/review.md) and inspect the rendered result at desktop and narrow widths using available browser tools. Repair concrete problems in one focused pass and recheck affected views. If rendering is unavailable, record that limitation rather than claiming visual validation. Functional and accessibility checks still follow the underlying Sites workflow.
 
 Retain `design/park-direction.md` for later edits. Keep it out of visible copy. The handoff can name the selected park in one sentence when useful; lead with the working product.

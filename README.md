@@ -34,6 +34,7 @@ For a project-only default, add the same text to that project's `AGENTS.md` inst
 
 - Chooses a task model: monitor, triage, compare, plan, create, or read.
 - Selects from eight park profiles covering palette, composition, typography, and restrained details.
+- Creates a matching favicon for new Sites, preserving supplied brand icons.
 - Explores three short concepts internally, then builds one.
 - Checks the actual task, responsive behavior, and unnecessary copy.
 
