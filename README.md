@@ -1,12 +1,16 @@
 # Sites Creative Direction
 
-A companion skill for ChatGPT Sites that automatically translates a national park into a distinctive visual direction. Describe the site you need; the builder chooses the park and composition internally and delivers one considered design.
+A companion skill for ChatGPT Sites that chooses task-focused UX and translates a national park into a distinctive visual direction. Describe the site you need; the builder chooses the interaction model, park, and composition internally and delivers one considered design with minimal useful copy.
 
 The starter library includes Joshua Tree, Olympic, Bryce Canyon, Acadia, Yellowstone, White Sands, Glacier, and Hawaiʻi Volcanoes. Each profile includes palette seeds, spatial principles, typography, a signature detail, mobile adaptation, and clichés to avoid. These are original creative interpretations, not official park identities.
 
 ## Workflow
 
-Understand the task → choose a park → explore three short structural concepts → select one → save a design brief → build through Sites → inspect the rendered result.
+Understand the task → choose an interaction model → choose a park → explore three short structural concepts → select one → save a design brief → build through Sites → walk through the task and inspect the rendered result.
+
+The UX layer distills six ideals: start with a useful outcome; prioritize by consequence; put meaning beside information; reveal depth without losing orientation; close the loop on actions; and preserve the task across devices and visits. It rejects decorative eyebrows, repeated subtitles, generic welcome copy, and panel descriptions that narrate obvious controls. These are internal design principles, not a prescribed set of page sections.
+
+Read [the UX guidance](skills/sites-park-design/references/ux-principles.md) or [the source-grounded research](skills/sites-park-design/references/research/ux-foundations.md) covering dashboard research, GOV.UK, Microsoft, Grafana, IBM Carbon, Nielsen Norman Group, Apple, and W3C. The patterns are our synthesis, not a claim that any source endorses this particular skill.
 
 Only the selected concept is implemented. The workflow adds no user questionnaire, unsolicited product features, or publishing permission. Explicit brand references take precedence; ordinary maintenance preserves the existing design. The skill works alongside the installed Sites building/hosting skills, not as a replacement.
 

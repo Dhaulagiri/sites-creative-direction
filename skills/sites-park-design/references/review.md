@@ -7,8 +7,14 @@ Inspect the real implementation, not just its written rationale. Use the main de
 - Can someone begin the primary task immediately, with required controls and useful content visible?
 - Are type, contrast, keyboard focus, and responsive behavior usable? Measure text contrast: 4.5:1 for normal text, 3:1 for qualifying large text; check relevant non-text control boundaries too. Do not approve colors from swatches alone.
 - Does the design preserve the requested functionality, information, brand, and scope?
+- Is the chosen interaction model appropriate to the actual task, with meaningful value/context and feedback where relevant?
+- Does every visible line help identify, interpret, decide, or act? Remove decorative eyebrows, generic welcome copy, repeated subtitles, and descriptions of self-evident controls. Preserve necessary instructions and accessible labels.
 
 Fix failed gates before comparing visual character. Never trade them for novelty.
+
+## Task walkthrough
+
+Perform the main task, not just a screenshot review. For an interactive surface, use a representative input, selection, or edit and verify its result; check relevant failure/recovery and return-from-detail behavior. For a reading surface, follow its main reading/navigation path. Confirm active scope, selection, and work survive transitions as intended. Check the applicable flow with keyboard and at a narrow width; include 320 CSS pixel reflow/enlargement where relevant, while respecting genuine two-dimensional content exceptions. Record what was actually checked and what remains unverified. Do not add product features solely to make a checklist item applicable.
 
 ## Character
 
